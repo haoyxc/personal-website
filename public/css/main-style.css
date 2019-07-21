@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
+
+/*CSS Variables*/
+:root {
+  --primary-color: #b90415;
+  --primary-color-hover: #d3071b;
+  --secondary-color: #103063;
+  --secondary-color-hover: #143f85;
+  --light-color: #f4f4f4;
+}
+* {
+  box-sizing: border-box;
+}
+header {
+  display: block;
+}
+#nav-bar {
+  z-index: -1;
+  display: block;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  background-color: #252529;
+  margin: 0;
+  color: white;
+  line-height: 1.6;
+}
+/* img{
+    width: 100%; 
+  } */
+a.header-link {
+  text-decoration: none;
+  color: #ccc;
+}
+#about {
+  padding: 2rem 0;
+}
+.section-head {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.section h3 {
+  font-size: 2rem;
+}
+#about {
+  /* background: #8A1583; */
+}
+
+/* showcase */
+#showcase {
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+
+  background-image: url("/img/sunset.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background: url("../img/sunset.jpg") no-repeat center/cover; */
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+}
+
+#showcase .container {
+  margin-top: 25vh;
+}
+
+#showcase h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+#showcase h2 {
+  font-size: 2rem;
+}
+footer .footer-bottom {
+  background: #333;
+  padding: 1rem;
+  margin-bottom: 0;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1180px;
+  text-align: center;
+  margin: 0;
+  padding: 0 3rem;
+}
+.lead {
+  font-size: 1.3rem;
+}
+.mb {
+  margin-bottom: 1rem;
+}
+.mt {
+  margin-top: 1rem;
+}
+.text-center {
+  text-align: center;
+}
+/*Buttons*/
+.btn {
+  padding: 1rem;
+  color: white;
+  display: inline-block;
+  border-radius: 3px;
+}
+.btn-primary {
+  background: var(--primary-color);
+}
+.btn-primary:hover {
+  background: var(--primary-color-hover);
+}
+.btn-secondary {
+  background: var(--secondary-color);
+}
+.btn-secondary:hover {
+  background: var(--secondary-color-hover);
+}
+
+/*Text colors*/
+.text-primary {
+  color: var(--primary-color);
+}
+.text-secondary {
+  color: var(--secondary-color);
+}
+.text-light {
+  color: var(--light-color);
+}
+
+/*Navigation*/
+nav {
+  height: 40px;
+  width: 100%;
+  background-color: #333;
+  color: #eee;
+  position: fixed;
+  z-index: 3;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  float: left;
+}
+nav a {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+  color: #eee;
+  text-decoration: none;
+}
+nav li:hover {
+  background-color: #444;
+}
+nav a#openup {
+  display: none;
+}
+
+img.portrait {
+  width: 20vw;
+}
+
+.page-title {
+  text-align: center;
+  margin-top: 0;
+  /* adding-top: 50px */
+}
+.title-container {
+  /* padding-top: 50px */
+}
+
+@media screen and (max-width: 680px) {
+  .hide-on-small {
+    display: none;
+  }
+  #showcase {
+    height: 50vh;
+  }
+  #showcase .container {
+    margin-top: 15vh;
+  }
+  #showcase h1 {
+    font-size: 3rem;
+  }
+  #showcase h2 {
+    font-size: 1.5rem;
+  }
+  nav {
+    height: auto;
+    border-bottom: 0;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+  }
+  nav li {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+  nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    background: #333;
+    border-bottom: 1px solid #555;
+  }
+  nav a:hover {
+    background: #444;
+  }
+  nav a#openup:after {
+    content: "|||";
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Safari and Chrome */
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+  }
+  nav a#openup {
+    display: block;
+    background-color: #333;
+    width: 100%;
+    position: relative;
+  }
+}
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+.title-container {
+  margin-top: 0;
+  padding-top: 0;
+  display: block;
+}
+.page-title {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Testimony page  */
+#testimony {
+  background-image: url("/img/cis-byo2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.section-title {
+  text-align: center;
+}
+.section-inner {
+  padding: 10px 50px;
+}
+#testimony h4 {
+  font-style: italic;
+}
+/* End of testimony page */
+/* contact page */
+.message {
+  text-align: center;
+}
+/* Interests page */
+.art-collection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+  width: 90vw;
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+  overflow: hidden;
+}
+.art-piece {
+  max-width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+/* End of interests page */
+
+/* For IE 6/7 (trigger hasLayout) */
+/* Everything under this is for the contact page
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0; 
+} */
+/* body{
+    background-color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+@font-face {
+  font-family: "Genericons";
+  src: url("/genericons/genericons-regular-webfont.woff") format("woff"),
+    url("/genericons/genericons-regular-webfont.eot") format("truetype");
+}
+
+.container-2 {
+  margin: 50px auto;
+  width: 90%;
+}
+/* header h1 {
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+} */
+
+.accordian {
+  background: #333;
+  width: 90%;
+  margin: 50px auto;
+  min-width: 800px;
+  display: block;
+  list-style-type: none;
+  overflow: hidden;
+  height: 200px;
+  font-size: 0;
+}
+.tab {
+  display: inline-block;
+  background-color: #444;
+  border-right: #333 solid 1px;
+  width: 80px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  transition: all 0.5s ease-in-out 0.1s;
+}
+.tab:hover {
+  width: 450px;
+}
+.tab:hover .social a:before {
+  margin-left: -100px;
+}
+.tab:hover .social a:after {
+  margin-left: -5px;
+}
+.tab .content {
+  background: white;
+  width: 360px;
+  height: 200px;
+  margin-left: 80px;
+  position: relative;
+  padding: 50px 0 0 15px;
+}
+.tab .content h1 {
+  color: #333;
+  margin-top: 0;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.tab .content p {
+  color: #333;
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  padding-right: 30px;
+}
+.social a:before,
+.social a:after {
+  transition: all 0.4s ease-in-out 0.1s;
+  width: 80px;
+  height: 200px;
+  position: absolute;
+  text-indent: 0;
+  padding-top: 90px;
+  padding-left: 25px;
+  display: block;
+  font: normal 30px Genericons;
+}
+.social a:after {
+  font-size: 48px;
+  padding-left: 20px;
+  padding-top: 80px;
+  margin-left: 85px;
+}
+
+/* icons */
+
+.facebook a:before,
+.facebook a:after {
+  content: "\f204";
+  color: white;
+}
+.facebook a:after {
+  background-color: #3b5998;
+}
+.instagram a:before,
+.instagram a:after {
+  content: "\f215";
+  color: white;
+}
+.instagram a:after {
+  background-color: #6dc993;
+}
+.linkedin a:before,
+.linkedin a:after {
+  content: "\f208";
+  color: white;
+}
+.linkedin a:after {
+  background-color: #00a9cd;
+}
+.github a:before,
+.github a:after {
+  content: "\f200";
+  color: white;
+}
+.github a:after {
+  background-color: #6e5494;
+}
+
+@media (max-width: 800px) {
+  .container-2 {
+    width: 70%;
+    z-index: -1;
+  }
+  .tab {
+    display: block;
+    width: 100%;
+    border-bottom: 3px #333 solid;
+  }
+  .accordian {
+    display: block;
+    min-width: 450px;
+    height: auto;
+    z-index: -1;
+  }
+  .tab .content {
+    width: 85%;
+  }
+  .tab:hover {
+    width: 100%;
+  }
+}
+@media (max-width: 680px) {
+  .container-2 {
+    width: 95%;
+  }
+  .accordian {
+    width: 100%;
+    min-width: 350px;
+    z-index: -1;
+  }
+}
+#contact-form {
+  text-align: center;
+  padding: 0 20vw;
+}
+#contact-form .form-area {
+  width: 60vw;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#contact-message {
+  height: 80px;
+}
+.form-button {
+  text-align: center;
+  display: block;
+}

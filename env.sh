@@ -1,0 +1,1 @@
+export MONGODB_URI="mongodb+srv://haoyxc:helloworld@cluster0-rmlva.mongodb.net/contactForm?retryWrites=true&w=majority"

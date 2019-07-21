@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> -->
+    <link rel="stylesheet" href="/css/main-style.css" />
+    <title>Welcome to my Page</title>
+</head>
+
+<body>
+    <!-- Showcase and Nav -->
+
+    <header id="nav-bar">
+        <nav class="cf">
+            <ul class="cf">
+                <li class="hide-on-small">
+                    <a href="/" class="header-link">Cindy Hao</a>
+                </li>
+                <li>
+                    <a href="/#about" class="header-link">About Me</a>
+                </li>
+                <li>
+                    <a href="#work" class="header-link">Work</a>
+                </li>
+                <li>
+                    <a href="/interests" class="header-link">Interests</a>
+                </li>
+                <li>
+                    <a href="/testimony">Testimony</a>
+                </li>
+                <li>
+                    <a href="/contact">Contact</a>
+                </li>
+            </ul>
+            <a href="#" id="openup">My Site</a>
+        </nav>
+    </header>
+
+    {{#if title}}
+    <div class="title-container">
+        <h1 class="page-title" style="padding-top:50px">{{title}}</h1>
+    </div>
+    {{/if}}
+    {{{body}}}
+
+    <footer>
+        <div class="footer-bottom text-center">
+            Copyright &copy; 2019 Cindy Hao
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
