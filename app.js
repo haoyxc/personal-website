@@ -44,7 +44,7 @@ app.post("/contact", function(req, res) {
     });
 });
 app.get("/interests", function(req, res) {
-  res.render("interests", { title: "Interests and Hobbies" });
+  res.render("interests", { title: "Artwork" });
 });
 app.get("/testimony", function(req, res) {
   res.render("testimony");

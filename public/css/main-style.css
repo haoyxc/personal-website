@@ -2,8 +2,8 @@
 
 /*CSS Variables*/
 :root {
-  --primary-color: #b90415;
-  --primary-color-hover: #d3071b;
+  --primary-color: #ffa1dd;
+  --primary-color-hover: #ff88d4;
   --secondary-color: #103063;
   --secondary-color-hover: #143f85;
   --light-color: #f4f4f4;
@@ -109,9 +109,11 @@ footer .footer-bottom {
 }
 .btn-primary {
   background: var(--primary-color);
+  text-decoration: none;
 }
 .btn-primary:hover {
   background: var(--primary-color-hover);
+  text-decoration: none;
 }
 .btn-secondary {
   background: var(--secondary-color);
