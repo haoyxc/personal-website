@@ -24,6 +24,7 @@ body {
   margin: 0;
   color: white;
   line-height: 1.6;
+  height: 100vh;
 }
 /* img{
     width: 100%; 
@@ -62,10 +63,12 @@ a.header-link {
   height: 100vh;
   position: relative;
   overflow-y: hidden;
+  text-align: center;
 }
 
 #showcase .container {
   margin-top: 25vh;
+  text-align: center;
 }
 
 #showcase h1 {
@@ -273,6 +276,9 @@ img.portrait {
 .section-title {
   text-align: center;
 }
+.section-main {
+  text-align: center;
+}
 .section-inner {
   padding: 10px 50px;
 }
@@ -436,6 +442,14 @@ img.portrait {
 .github a:after {
   background-color: #6e5494;
 }
+.gmail a:before,
+.gmail a:after {
+  content: "\f410";
+  color: white;
+}
+.gmail a:after {
+  background-color: #b23121;
+}
 
 @media (max-width: 800px) {
   .container-2 {
@@ -486,4 +500,23 @@ img.portrait {
 .form-button {
   text-align: center;
   display: block;
+}
+/* Beginning of work */
+#work {
+}
+.img-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 1rem;
+  width: 90vw;
+  text-align: center;
+  object-fit: contain;
+}
+.work-piece {
+  max-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: contain;
 }
