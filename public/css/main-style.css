@@ -10,6 +10,7 @@
 }
 * {
   box-sizing: border-box;
+  text-align: center;
 }
 header {
   display: block;
@@ -170,7 +171,7 @@ nav a#openup {
 }
 
 img.portrait {
-  width: 20vw;
+  width: 200px;
 }
 
 .page-title {
@@ -503,6 +504,9 @@ img.portrait {
 }
 /* Beginning of work */
 #work {
+}
+.work-blurb {
+  text-align: center;
 }
 .img-row {
   display: grid;
