@@ -311,6 +311,28 @@ img.portrait {
 }
 /* End of interests page */
 
+/* Beginning of work */
+#work {
+}
+.work-blurb {
+  text-align: center;
+}
+.img-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 1rem;
+  width: 90vw;
+  text-align: center;
+  object-fit: contain;
+}
+.work-piece {
+  max-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: contain;
+}
 /* For IE 6/7 (trigger hasLayout) */
 /* Everything under this is for the contact page
   * {
@@ -337,17 +359,21 @@ img.portrait {
   margin-bottom: 10px;
   text-align: center;
 } */
-
-.accordian {
-  background: #333;
+.contact {
   width: 90%;
   margin: 50px auto;
+}
+.accordian {
+  background: #333;
+  width: 100%;
+  /* margin: 50px auto; */
   min-width: 800px;
   display: block;
   list-style-type: none;
   overflow: hidden;
   height: 200px;
   font-size: 0;
+  text-align: left;
 }
 .tab {
   display: inline-block;
@@ -398,13 +424,15 @@ img.portrait {
   position: absolute;
   text-indent: 0;
   padding-top: 90px;
-  padding-left: 25px;
+  /* used to be 25 */
+  padding-left: 5px;
   display: block;
   font: normal 30px Genericons;
 }
 .social a:after {
   font-size: 48px;
-  padding-left: 20px;
+  /* Used to be 20 */
+  padding-left: 10px;
   padding-top: 80px;
   margin-left: 85px;
 }
@@ -484,43 +512,4 @@ img.portrait {
     min-width: 350px;
     z-index: -1;
   }
-}
-#contact-form {
-  text-align: center;
-  padding: 0 20vw;
-}
-#contact-form .form-area {
-  width: 60vw;
-  display: block;
-  text-align: center;
-  margin-bottom: 10px;
-}
-#contact-message {
-  height: 80px;
-}
-.form-button {
-  text-align: center;
-  display: block;
-}
-/* Beginning of work */
-#work {
-}
-.work-blurb {
-  text-align: center;
-}
-.img-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  grid-column-gap: 10px;
-  grid-row-gap: 1rem;
-  width: 90vw;
-  text-align: center;
-  object-fit: contain;
-}
-.work-piece {
-  max-width: 100%;
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
-  object-fit: contain;
 }
